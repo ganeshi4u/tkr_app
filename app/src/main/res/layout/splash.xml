@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/black_overlay"
-    android:weightSum="1"
-    style="@style/AppTheme"
-    android:transitionGroup="false">
+    android:layout_height="match_parent">
     
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:src="@drawable/splash_image" />
+        android:src="@drawable/splash_image"
+        android:background="#000000" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="TKR College of Engineering &amp; Technology"
-        android:id="@+id/textView"
-        android:textColor="#fff200"
-        android:phoneNumber="false"
-        android:background="#d60000"
-        android:textStyle="bold"
-        android:textAlignment="center" />
 </LinearLayout>
