@@ -32,6 +32,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <!-- Nav Menu -->
+        <activity android:name=".MainSite"></activity>
+        <activity android:name=".Student"></activity>
+        <activity android:name=".PhotoGallery"></activity>
+        <activity android:name=".TKRRouteMap"></activity>
+        <activity android:name=".Placements"></activity>
+        <activity android:name=".ContactUs"></activity>
     </application>
 
 </manifest>
