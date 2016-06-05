@@ -6,10 +6,10 @@ android {
 
     defaultConfig {
         applicationId "tkr.firstprojects.com.tkr"
-        minSdkVersion 14
+        minSdkVersion 13
         targetSdkVersion 23
         versionCode 1
-        versionName "1.0"
+        versionName "2.0"
     }
     buildTypes {
         release {
