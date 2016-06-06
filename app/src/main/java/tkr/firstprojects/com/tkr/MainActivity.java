@@ -68,9 +68,11 @@ public class MainActivity extends AppCompatActivity {
         mDrawerList.setOnItemClickListener(new SlideitemListener());
 
         // enabling action bar app icon and behaving it as toggle button
-        if (getSupportActionBar() != null) {
+        if (getSupportActionBar() !=null) {
+            getSupportActionBar().setLogo(R.drawable.splash_image);
+            getSupportActionBar().setDisplayUseLogoEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeButtonEnabled(true);
         }
 
         mDrawerToggle = new ActionBarDrawerToggle(
@@ -79,13 +81,13 @@ public class MainActivity extends AppCompatActivity {
                 R.string.app_name,
                 R.string.app_name) {
             public void onDrawerClosed(View view) {
-                getSupportActionBar().setTitle(mTitle);
+                //getSupportActionBar().setTitle(mTitle);
                 // calling onPrepareOptionsMenu() to show action bar icons
                 invalidateOptionsMenu();
             }
 
             public void onDrawerOpened(View drawerView) {
-                getSupportActionBar().setTitle(mDrawerTitle);
+                //getSupportActionBar().setTitle(mDrawerTitle);
                 // calling onPrepareOptionsMenu() to hide action bar icons
                 invalidateOptionsMenu();
             }

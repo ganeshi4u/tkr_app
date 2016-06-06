@@ -16,8 +16,8 @@
     <string-array name="pageurl">
         <item>http://tkrcet.ac.in/</item>
         <item>http://103.15.62.91/tkr/</item>
-        <item>http://tkrcet.ac.in/photo-gallery/</item>
-        <item>https://doc-14-9k-docs.googleusercontent.com/docs/securesc/g64no9sf78nlhj3j4fg3v2c8s3p87fn2/2fhukcjsljvbrn5o17vldhnov090htdr/1465149600000/11903313559533769997/11903313559533769997/0B_pe9BXZFAtWcUVXdVliQnFad3c?e</item>
+        <item>file:///android_asset/images.html</item>
+        <item>https://drive.google.com/file/d/0B_pe9BXZFAtWcUVXdVliQnFad3c/view?usp=sharing</item>
         <item>http://tkrcet.ac.in/placements/</item>
         <item>http://tkrcet.ac.in/contact-us/</item>
     </string-array>

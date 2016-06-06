@@ -3,9 +3,11 @@ package tkr.firstprojects.com.tkr;
 import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebBackForwardList;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -15,7 +17,6 @@ import android.webkit.WebViewClient;
  */
 public class MyWebViewFragment extends Fragment {
 
-    ProgressDialog mProgress;
     WebView webview;
 
     @Override
@@ -32,9 +33,10 @@ public class MyWebViewFragment extends Fragment {
 
         WebSettings settings = webview.getSettings();
         settings.setJavaScriptEnabled(true);
+        settings.setBuiltInZoomControls(true);
+        settings.setSupportZoom(true);
 
-        mProgress = ProgressDialog.show(getActivity(), "Loading",
-                "Please wait for a moment...");
+
         webview.loadUrl(url);
 
         webview.setWebViewClient(new WebViewClient() {
@@ -45,13 +47,8 @@ public class MyWebViewFragment extends Fragment {
                 return true;
             }
 
-            @Override
-            public void onPageFinished(WebView view, String url) {
-                super.onPageFinished(view, url);
-                if (mProgress.isShowing()) {
-                    mProgress.dismiss();
-                }
-            }
+
+
         });
 
         return rootView;

@@ -16,12 +16,12 @@
 
     <ListView
         android:id="@+id/slider_list"
-        android:layout_width="240dp"
+        android:layout_width="260dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="#ffffff"
         android:choiceMode="singleChoice"
-        android:divider="#dddddd"
+        android:divider="@color/black_overlay"
         android:dividerHeight="1dp" />
 
 </android.support.v4.widget.DrawerLayout>
