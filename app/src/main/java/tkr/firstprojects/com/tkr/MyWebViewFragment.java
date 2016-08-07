@@ -1,13 +1,11 @@
 package tkr.firstprojects.com.tkr;
 
 import android.app.Fragment;
-import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebBackForwardList;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -46,13 +44,40 @@ public class MyWebViewFragment extends Fragment {
                 view.loadUrl(url);
                 return true;
             }
+        });
 
+        /**
+         * Code used to retract the previous webpages for
+         * fragments starts from here.
+         */
+        webview.setOnKeyListener(new View.OnKeyListener()
+        {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event)
+            {
+                if(event.getAction() == KeyEvent.ACTION_DOWN)
+                {
+                    WebView webView = (WebView) v;
 
+                    switch(keyCode)
+                    {
+                        case KeyEvent.KEYCODE_BACK:
+                            if(webView.canGoBack())
+                            {
+                                webView.goBack();
+                                return true;
+                            }
+                            break;
+                    }
+                }
 
+                return false;
+            }
         });
 
         return rootView;
 
 
     }
+
 }
