@@ -24,11 +24,11 @@
 
     <!-- Icons -->
     <array name="icons">
-        <item>@drawable/splash_image</item>
-        <item>@drawable/splash_image</item>
-        <item>@drawable/splash_image</item>
-        <item>@drawable/splash_image</item>
-        <item>@drawable/splash_image</item>
-        <item>@drawable/splash_image</item>
+        <item>@drawable/ic_list_num1</item>
+        <item>@drawable/ic_list_num2</item>
+        <item>@drawable/ic_list_num3</item>
+        <item>@drawable/ic_list_num4</item>
+        <item>@drawable/ic_list_num5</item>
+        <item>@drawable/ic_list_num6</item>
     </array>
 </resources>

@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
 
         // enabling action bar app icon and behaving it as toggle button
         if (getSupportActionBar() !=null) {
-            getSupportActionBar().setLogo(R.drawable.splash_image);
             getSupportActionBar().setDisplayUseLogoEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
