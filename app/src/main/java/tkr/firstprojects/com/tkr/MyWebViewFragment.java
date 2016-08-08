@@ -20,7 +20,7 @@ public class MyWebViewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.web_fragment, container,
+        final View rootView = inflater.inflate(R.layout.web_fragment, container,
                 false);
 
         Bundle bundle = getArguments();
@@ -74,10 +74,7 @@ public class MyWebViewFragment extends Fragment {
                 return false;
             }
         });
-
         return rootView;
-
-
     }
 
 }

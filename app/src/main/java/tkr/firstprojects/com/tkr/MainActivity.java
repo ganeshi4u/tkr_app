@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Bundle;
@@ -121,8 +122,10 @@ public class MainActivity extends AppCompatActivity {
         fragment.setArguments(bundle);
 
         FragmentManager fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.frame_container, fragment).commit();
+        FragmentTransaction ft = fragmentManager.beginTransaction();
+                ft.replace(R.id.frame_container, fragment);
+                ft.addToBackStack(null);
+                ft.commit();
 
         setTitle(menutitles[position]);
         mDrawerLayout.closeDrawer(mDrawerList);
