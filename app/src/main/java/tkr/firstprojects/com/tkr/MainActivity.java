@@ -69,19 +69,19 @@ public class MainActivity extends AppCompatActivity {
         mDrawerList.setOnItemClickListener(new SlideitemListener());
 
         // enabling action bar app icon and behaving it as toggle button
-        if (getSupportActionBar() !=null) {
+
             getSupportActionBar().setDisplayUseLogoEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+
 
         mDrawerToggle = new ActionBarDrawerToggle(
                 this,
                 mDrawerLayout,
-                R.string.app_name,
-                R.string.app_name) {
+                R.string.menu,
+                R.string.menu) {
             public void onDrawerClosed(View view) {
-                //getSupportActionBar().setTitle(mTitle);
+                getSupportActionBar().setTitle(mTitle);
                 // calling onPrepareOptionsMenu() to show action bar icons
                 invalidateOptionsMenu();
             }
@@ -135,9 +135,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void setTitle(CharSequence title) {
         mTitle = title;
-        if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(mTitle);
-        }
     }
 
     @Override

@@ -33,6 +33,7 @@ public class MyWebViewFragment extends Fragment {
         settings.setJavaScriptEnabled(true);
         settings.setBuiltInZoomControls(true);
         settings.setSupportZoom(true);
+        settings.setAppCacheEnabled(true);
 
 
         webview.loadUrl(url);

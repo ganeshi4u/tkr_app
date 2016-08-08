@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TKR</string>
+    <string name="menu">MENU</string>
     <string name="action_settings">Settings</string>
     <string name="imgdesc">imgdesc</string>
     <!-- Title -->
