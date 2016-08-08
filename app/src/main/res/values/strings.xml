@@ -24,11 +24,11 @@
 
     <!-- Icons -->
     <array name="icons">
-        <item>@drawable/ic_list_num1</item>
-        <item>@drawable/ic_list_num2</item>
-        <item>@drawable/ic_list_num3</item>
-        <item>@drawable/ic_list_num4</item>
-        <item>@drawable/ic_list_num5</item>
-        <item>@drawable/ic_list_num6</item>
+        <item>@drawable/ic_main</item>
+        <item>@drawable/ic_student</item>
+        <item>@drawable/ic_photo</item>
+        <item>@drawable/ic_map</item>
+        <item>@drawable/ic_placement</item>
+        <item>@drawable/ic_contact</item>
     </array>
 </resources>

@@ -47,8 +47,8 @@ public class MyWebViewFragment extends Fragment {
         });
 
         /**
-         * Code used to retract the previous webpages for
-         * fragments starts from here.
+         * Code used to retract the previous webpages
+         * starts from here.
          */
         webview.setOnKeyListener(new View.OnKeyListener()
         {
